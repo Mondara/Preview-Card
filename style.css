@@ -4,14 +4,9 @@ body {
   text-align: left;
   background-color: hsl(0, 0%, 95%);
   color: hsla(0, 0%, 100%, 0.75);
-
+  font-family: 'Lexend Deca', sans-serif;
   margin: 0;
   padding: 0;
-}
-
-p {
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 400;  
 }
 
 h2 {
@@ -20,56 +15,68 @@ h2 {
   font-size: 35px;
 }
 
+/* Button */
 button {
-  margin-top: 50%;
-  padding: 10px 20px;
+  font-weight: bold;
+
+  padding: 12px 32px;
+  margin-top: 200px;
   border-radius: 20px;
-  border: 0
+  border: 0;
 }
 
-.bright-orange {
-  background-color: hsl(31, 77%, 52%);
+/* Button Text Colors */
+.left-column-button { color: hsl(31, 77%, 52%) }
+.middle-column-button { color: hsl(184, 100%, 22%) }
+.right-column-button { color: hsl(179, 100%, 13%)}
 
-}
-.very-dark-cyan {
-  background-color: hsl(179, 100%, 13%);
-
-}
-.dark-cyan {
-  background-color: hsl(184, 100%, 22%);
+/* Button Active State */
+button:active {
+  border: 1px solid white;
+  color: white;
 }
 
+.left-column-button:active { background-color: hsl(31, 77%, 52%) }
+.middle-column-button:active { background-color: hsl(184, 100%, 22%) }
+.right-column-button:active { background-color: hsl(179, 100%, 13%)}
+
+/* Column Background Colors */
+.bright-orange { background-color: hsl(31, 77%, 52%) }
+
+.dark-cyan { background-color: hsl(184, 100%, 22%) }
+
+.very-dark-cyan { background-color: hsl(179, 100%, 13%) }
+
+/* Position Columns */
 .container {
-  width: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid black;
   height: 100vh;
-  margin: auto;
-
-  display: grid;
-  grid-template: 20% 60% 20% / 10% 1fr 1fr 1fr 10%;
-  grid-template-areas: ". . . . ."
-                        ". left-column middle-column right-column ."
-                        ". . . . ."; 
-  place-content: center;
   
 }
-
 .column {
-  width: auto;
+  padding: 40px;
+  width: 250px;
   height: auto;
-  padding: 40px;  
 }
 
-.left-column {
+/* Round left and right column Corners */
+.right-column { border-radius: 0 5px 5px 0 }
+.left-column { border-radius: 5px 0 0 5px}
 
-  grid-area: left-column;
-}
+/* Mobile */
+@media only screen and (max-width: 450px) {
+  .container {
+    flex-direction: column;
+  }
+  button {
+    margin-top: 10px;
+  }
+  .right-column { border-radius: 0 0 5px 5px }
+  .left-column { border-radius: 5px 5px 0 0 }
 
-.middle-column {
-  
-  grid-area: middle-column;
-}
-
-.right-column {
-  
-  grid-area: right-column;
 }
