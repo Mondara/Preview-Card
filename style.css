@@ -71,23 +71,19 @@ button:active {
 
 .column {
   padding: 40px;
-  width: 260px; 
+  max-width: 260px; 
 }
-
 
 /* Round left and right column Corners */
 .right-column { border-radius: 0 5px 5px 0 }
 .left-column { border-radius: 5px 0 0 5px}
 
 /* Mobile */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 680px) {
   .container {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-  
-    height: 100vh;    
-
   }
 
   .column {
