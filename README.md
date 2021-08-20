@@ -26,7 +26,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./Screenshot_fullVersion.png)
-![](./Screenshot_mobileVersion.png)
+![](./Screenshot_mobileVersion_horizontal.png)
 
 ### Links
 
@@ -43,7 +43,8 @@ Users should be able to:
 - Mobile-first workflow
 
 ### Continued development
- Will Continue to update css as I continue to learn. And rebuild using a css framework like bootstrap or material ui.
+ Will Continue to update css as I continue to learn. 
+ And maybe even rebuild it using a css framework like bootstrap or material ui.
 
 ## Author
 
