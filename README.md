@@ -7,7 +7,6 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Continued development](#continued-development)
@@ -27,11 +26,6 @@ Users should be able to:
 
 ![](./Screenshot_fullVersion.png)
 ![](./Screenshot_mobileVersion_horizontal.png)
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
